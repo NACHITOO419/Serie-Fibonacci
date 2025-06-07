@@ -10,15 +10,22 @@ BtNiniS.addEventListener("click",function(){
 //Declaro ciclo for que va a : Sumar -Actualizar - mostrar ...
         let Resul = 0;//R
         let Num1 = 0;//J
-        let Num2 = 1;//K
-    
+        let Num2 = 1;//K    
+       const contenedor = document.getElementById("Bkmuestra");
+     
     for(let i=0;i<5;i++){
         Resul=Num1 + Num2;
         Num1=Num2;
         Num2=Resul;
-            document.writeln("Resultado: ",Resul +"<br>"); 
-            /*alert(Resul);// aca lo comentetmos porque pusemos un boton a esperar el click para que realice la funcion.
+
+             contenedor.style.display = "block";//activar el borde con un disbplay
+
+            contenedor.innerHTML += `Resultado: ${Resul} <br>`;
+                      /*alert(Resul);// aca lo comentetmos porque pusemos un boton a esperar el click para que realice la funcion.
             console.log(Num1, Num2);*/
     
-          }})
+          }
+         document.body.style.backgroundColor="cadetblue";
+        // document.body.p.style="color: red"; //"border: 3px solid #2f5050"; 
+        })
 //el for Por completo va dentro de los parametros de la funcion...
