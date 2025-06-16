@@ -42,8 +42,9 @@ button{
     border-width: 3px;
     border-style: solid;
     margin: 10px;
-    margin-left: 240px;    background-color: #496d6d;
+    margin-left: 240px;    
+    background-color: #496d6d;
     color: white;
     font-size: 18px;
-    width: 200px;a
+    width: 200px;
 }
